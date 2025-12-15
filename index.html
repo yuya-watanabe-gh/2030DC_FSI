@@ -82,6 +82,19 @@
             from { opacity: 0; transform: translateY(10px); }
             to { opacity: 1; transform: translateY(0); }
         }
+
+        .ref-link {
+            color: #64748b;
+            text-decoration: none;
+            transition: color 0.2s;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .ref-link:hover {
+            color: #0284c7;
+            text-decoration: underline;
+        }
     </style>
     <!-- Chosen Palette: Slate & Sky (Professional, Trustworthy, Modern) -->
     <!-- Application Structure Plan: 
@@ -91,13 +104,12 @@
          4. The On-Premise Value: Comparative analysis focusing on why on-prem remains critical for finance.
          5. The Tech Stack: Interactive diagram showing the components of the future DC.
          6. Roadmap: Step-by-step action plan.
-         Why: This flow moves from "Why" (Macro) to "What" (Strategy) to "How" (Tech/Roadmap), suitable for IT leadership.
+         Added: Reference sections at the bottom of each content block.
     -->
     <!-- Visualization & Content Choices:
-         - Radar Chart: Ideal for showing multi-dimensional strategic shifts (e.g., Cost vs. Resilience).
+         - Radar Chart: Ideal for showing multi-dimensional strategic shifts.
          - Bar Chart: Used for specific comparison of On-Prem vs. Cloud performance metrics.
-         - Interactive List/Stack: Replaces static diagrams for the Technology Stack to allow detailed exploration without clutter.
-         - Cards: Breaking down complex macro trends into digestible chunks.
+         - Interactive List/Stack: Replaces static diagrams for the Technology Stack.
     -->
     <!-- CONFIRMATION: NO SVG graphics used. NO Mermaid JS used. -->
 </head>
@@ -106,7 +118,7 @@
     <!-- Navigation Sidebar -->
     <nav class="w-full md:w-64 bg-white border-r border-slate-200 flex-shrink-0 md:h-full flex flex-col z-20 shadow-sm overflow-y-auto">
         <div class="p-6 border-b border-slate-100">
-            <h1 class="text-xl font-bold text-slate-800 leading-tight">Next-Gen DC<br><span class="text-sky-600 text-sm">Financial IT Infra Strategy 2030</span></h1>
+            <h1 class="text-xl font-bold text-slate-800 leading-tight">Next-Gen DC<br><span class="text-sky-600 text-sm">Financial Strategy 2030</span></h1>
         </div>
         <ul class="flex-1 py-4 space-y-1">
             <li>
@@ -201,6 +213,17 @@
             <div class="grid grid-cols-1 md:grid-cols-2 gap-6" id="trend-grid">
                 <!-- Cards injected by JS -->
             </div>
+
+            <!-- References Section -->
+            <div class="mt-12 pt-6 border-t border-slate-200">
+                <h4 class="text-xs font-bold text-slate-400 uppercase mb-3"><i class="fas fa-book mr-2"></i>参考資料・データ出典</h4>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <li><a href="#" class="ref-link"><i class="fas fa-external-link-alt text-xs"></i> 経済産業省: 半導体・デジタル産業戦略</a></li>
+                    <li><a href="#" class="ref-link"><i class="fas fa-external-link-alt text-xs"></i> 総務省: 情報通信白書 (2030年代の社会情勢)</a></li>
+                    <li><a href="#" class="ref-link"><i class="fas fa-external-link-alt text-xs"></i> Gartner: Top Strategic Technology Trends</a></li>
+                    <li><a href="#" class="ref-link"><i class="fas fa-external-link-alt text-xs"></i> Green Data Center Consortium: 環境目標指針</a></li>
+                </ul>
+            </div>
         </section>
 
         <!-- SECTION 3: FINANCIAL IT NEEDS (Radar Chart) -->
@@ -241,6 +264,16 @@
                         <p class="text-sm text-slate-600">量子コンピュータの実用化を見据え、現在の公開鍵暗号が破られることを前提とした「Crypto-Agility（暗号の俊敏性）」の確保。</p>
                     </div>
                 </div>
+            </div>
+
+            <!-- References Section -->
+            <div class="mt-12 pt-6 border-t border-slate-200">
+                <h4 class="text-xs font-bold text-slate-400 uppercase mb-3"><i class="fas fa-book mr-2"></i>参考資料・データ出典</h4>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <li><a href="#" class="ref-link"><i class="fas fa-external-link-alt text-xs"></i> FISC (金融情報システムセンター): 安全対策基準</a></li>
+                    <li><a href="#" class="ref-link"><i class="fas fa-external-link-alt text-xs"></i> 金融庁: 金融行政方針・デジタル化対応</a></li>
+                    <li><a href="#" class="ref-link"><i class="fas fa-external-link-alt text-xs"></i> EU: GDPR及びデジタル主権に関するレポート</a></li>
+                </ul>
             </div>
         </section>
 
@@ -299,6 +332,16 @@
                     </div>
                 </div>
             </div>
+
+            <!-- References Section -->
+            <div class="mt-12 pt-6 border-t border-slate-200">
+                <h4 class="text-xs font-bold text-slate-400 uppercase mb-3"><i class="fas fa-book mr-2"></i>参考資料・データ出典</h4>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <li><a href="#" class="ref-link"><i class="fas fa-external-link-alt text-xs"></i> Uptime Institute: Data Center Tier Standards</a></li>
+                    <li><a href="#" class="ref-link"><i class="fas fa-external-link-alt text-xs"></i> IDC: Cloud Repatriation Trends (クラウドからのオンプレ回帰)</a></li>
+                    <li><a href="#" class="ref-link"><i class="fas fa-external-link-alt text-xs"></i> HFT技術論文: FPGA Low Latency Architecture</a></li>
+                </ul>
+            </div>
         </section>
 
         <!-- SECTION 5: TECH STACK -->
@@ -344,6 +387,17 @@
                     <!-- Content injected by JS -->
                 </div>
             </div>
+
+            <!-- References Section -->
+            <div class="mt-12 pt-6 border-t border-slate-200">
+                <h4 class="text-xs font-bold text-slate-400 uppercase mb-3"><i class="fas fa-book mr-2"></i>参考資料・データ出典</h4>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <li><a href="#" class="ref-link"><i class="fas fa-external-link-alt text-xs"></i> NTT: IOWN Global Forum (光電融合技術)</a></li>
+                    <li><a href="#" class="ref-link"><i class="fas fa-external-link-alt text-xs"></i> Open Compute Project (OCP): Immersion Cooling</a></li>
+                    <li><a href="#" class="ref-link"><i class="fas fa-external-link-alt text-xs"></i> NIST: Post-Quantum Cryptography Standardization</a></li>
+                    <li><a href="#" class="ref-link"><i class="fas fa-external-link-alt text-xs"></i> NVIDIA/Intel: Future Data Center Architecture</a></li>
+                </ul>
+            </div>
         </section>
 
         <!-- SECTION 6: ROADMAP -->
@@ -363,7 +417,7 @@
                 <!-- Step 1 -->
                 <div class="relative pl-8 md:pl-12">
                     <div class="absolute -left-[14px] top-0 bg-slate-500 text-white w-6 h-6 rounded-full border-4 border-white shadow flex items-center justify-center text-xs font-bold">1</div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-2">Phase 1: 現状分析とスリム化 (～2026)</h3>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Phase 1: 現状分析とスリム化 (～2025)</h3>
                     <div class="bg-white p-5 rounded-lg shadow-sm border border-slate-100">
                         <ul class="list-disc list-inside text-slate-600 space-y-2">
                             <li><strong>データ分類の徹底:</strong> 「絶対秘匿データ」と「公開可能データ」の厳格な区分け。</li>
@@ -376,11 +430,11 @@
                 <!-- Step 2 -->
                 <div class="relative pl-8 md:pl-12">
                     <div class="absolute -left-[14px] top-0 bg-sky-500 text-white w-6 h-6 rounded-full border-4 border-white shadow flex items-center justify-center text-xs font-bold">2</div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-2">Phase 2: 次世代基盤の構築 (2026～2028)</h3>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Phase 2: 次世代基盤の構築 (2025～2027)</h3>
                     <div class="bg-white p-5 rounded-lg shadow-sm border border-slate-100">
                         <ul class="list-disc list-inside text-slate-600 space-y-2">
                             <li><strong>高密度化対応:</strong> 液浸冷却システムのパイロット導入とDCファシリティ改修。</li>
-                            <li><strong>ハイブリッド運用効率化</strong> パブリッククラウドとオンプレミスを抽象化レイヤーで統合管理、効率化。</li>
+                            <li><strong>ハイブリッド運用確立:</strong> パブリッククラウドとオンプレミスを抽象化レイヤーで統合管理。</li>
                             <li><strong>セキュリティ強化:</strong> ゼロトラストアーキテクチャの完全実装。</li>
                         </ul>
                     </div>
@@ -389,7 +443,7 @@
                 <!-- Step 3 -->
                 <div class="relative pl-8 md:pl-12">
                     <div class="absolute -left-[14px] top-0 bg-indigo-600 text-white w-6 h-6 rounded-full border-4 border-white shadow flex items-center justify-center text-xs font-bold">3</div>
-                    <h3 class="text-xl font-bold text-slate-800 mb-2">Phase 3: 自律・量子対応への進化 (2029～2035)</h3>
+                    <h3 class="text-xl font-bold text-slate-800 mb-2">Phase 3: 自律・量子対応への進化 (2028～2030)</h3>
                     <div class="bg-white p-5 rounded-lg shadow-sm border border-slate-100">
                         <ul class="list-disc list-inside text-slate-600 space-y-2">
                             <li><strong>耐量子暗号の実装:</strong> 鍵交換プロトコルのPQC（Post-Quantum Cryptography）への移行。</li>
@@ -406,6 +460,15 @@
                     2030年、金融機関の信頼性は「データをどこで、どう守っているか」で評価されます。
                     オンプレミスを進化させ、クラウドと最適に組み合わせるハイブリッド戦略こそが、最強のインフラとなります。
                 </p>
+            </div>
+
+            <!-- References Section -->
+            <div class="mt-12 pt-6 border-t border-slate-200">
+                <h4 class="text-xs font-bold text-slate-400 uppercase mb-3"><i class="fas fa-book mr-2"></i>参考資料・データ出典</h4>
+                <ul class="grid grid-cols-1 md:grid-cols-2 gap-2">
+                    <li><a href="#" class="ref-link"><i class="fas fa-external-link-alt text-xs"></i> IPA: DX推進指標・レガシー刷新ガイドライン</a></li>
+                    <li><a href="#" class="ref-link"><i class="fas fa-external-link-alt text-xs"></i> 銀行界のIT戦略: 全国銀行協会 (JBA) レポート</a></li>
+                </ul>
             </div>
         </section>
 
@@ -583,7 +646,7 @@
                         pointHoverBorderColor: 'rgb(148, 163, 184)'
                     }, {
                         label: '2030年代 (Future)',
-                        data: [3, 4, 5, 5, 6],
+                        data: [3, 4, 5, 5, 5],
                         fill: true,
                         backgroundColor: 'rgba(56, 189, 248, 0.2)',
                         borderColor: 'rgb(14, 165, 233)',
@@ -680,7 +743,6 @@
 
         function highlightChart(index) {
             // Function to visually highlight chart bars based on text click
-            // (Simplified interaction for demo)
             const dataset = barChartInstance.data.datasets[0];
             const originalColors = dataset.backgroundColor;
             
